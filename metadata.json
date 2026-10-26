@@ -1,0 +1,6 @@
+{
+  "name": "Puzzle World – Brain Challenge",
+  "description": "A premier multi-mode brain puzzle game featuring number logic, sliding tiles, match & merge, path connection, jigsaw, color patterns, and physics challenges with unique level rules.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

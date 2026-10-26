@@ -1,0 +1,759 @@
+# COMPLETE GAME DEVELOPMENT INSTRUCTIONS
+## Project Name: Puzzle World – Brain Challenge
+
+### 1. Game Overview and Main Concept
+
+Create a complete, professional, modern, highly interactive, and entertaining puzzle game called **“Puzzle World – Brain Challenge.”** The game must provide a fun and challenging experience for players of different ages. It should combine multiple puzzle types, creative rules, logical thinking, problem-solving challenges, and exciting rewards in one game.
+
+The game must not feel like a simple puzzle with the same rules repeated in every level. Every level, puzzle category, or challenge should introduce interesting mechanics, new objectives, different layouts, and progressively increasing difficulty. Players should always feel motivated to solve the next puzzle and unlock new challenges.
+
+The game must work smoothly on desktop computers, laptops, tablets, and mobile phones. It should be fully responsive, visually attractive, easy to understand, and comfortable to play using either a mouse or touch gestures.
+
+Build a complete playable game, not just a landing page, static design, or visual prototype. Every button, menu, puzzle interaction, setting, level, hint, reward, and game control must work correctly.
+
+### 2. Overall Game Design and Visual Style
+
+Design the game with a polished, colorful, premium-quality interface inspired by modern casual puzzle games.
+
+Use a balanced combination of:
+- Soft gradients and attractive background colors.
+- Rounded puzzle tiles, cards, and buttons.
+- Clear typography and readable instructions.
+- Smooth animations and transitions.
+- Attractive icons for hints, settings, rewards, levels, and achievements.
+- Subtle shadows and depth effects.
+- Responsive layouts with appropriate spacing.
+- Small visual effects when players make correct moves or complete puzzles.
+
+The interface should look professional rather than childish or overly complicated. Use a consistent design system across the home screen, level selection, gameplay, pause menu, victory screen, and settings.
+
+Make the puzzle board the main focus of the screen. Keep unnecessary visual elements away from the playing area so players can concentrate on solving the puzzle.
+
+Use colors that remain distinguishable for players with color-vision deficiencies. Never rely on color alone to communicate a puzzle's meaning; use shapes, numbers, symbols, labels, or patterns where appropriate.
+
+### 3. Home Screen and Main Menu
+
+Create an attractive home screen displaying the game title, a short tagline, a play button, and access to the game's main features.
+
+The home screen must contain the following options:
+
+**Play Game:** Opens the level selection screen or resumes the next available level.
+
+**Daily Challenge:** Opens a special puzzle challenge with a unique objective and reward.
+
+**Puzzle Modes:** Displays all available puzzle categories.
+
+**Level Selection:** Allows players to view unlocked levels, completed levels, and upcoming locked levels.
+
+**Achievements:** Shows badges, milestones, completed challenges, and player records.
+
+**Statistics:** Displays total puzzles solved, accuracy, best completion times, current streak, and other useful gameplay statistics.
+
+**Settings:** Opens sound, music, vibration, animation, theme, and accessibility settings.
+
+**How to Play:** Explains the controls, basic rules, and special puzzle mechanics.
+
+**Continue Game:** Returns players to their most recently saved puzzle whenever a saved game is available.
+
+On mobile devices, organize the main options into a clean vertical layout or a compact navigation system. On desktop, use a wider layout with clearly spaced cards and buttons.
+
+Every menu item must navigate to its correct screen. Include loading states when necessary and avoid buttons that appear functional but do nothing.
+
+### 4. Multiple Puzzle Game Modes
+
+The game must include several distinct puzzle modes. Each mode should have its own mechanics, rules, objectives, and progression system.
+
+#### Mode A: Number Logic Puzzle
+
+Create a puzzle board containing numbers, empty spaces, and logical patterns.
+
+Players must identify the correct numbers and place them in the appropriate cells to complete the challenge.
+
+Possible challenges include:
+- Completing missing numbers in a sequence.
+- Finding the next number in a mathematical pattern.
+- Matching numbers to reach a target.
+- Filling a grid according to row and column rules.
+- Solving simple arithmetic combinations.
+- Identifying numbers that do not belong in a pattern.
+
+Display the current objective and any special restrictions before the level begins.
+
+For example, a puzzle might require the player to complete a sequence such as 2, 4, 8, 16, and determine the next number. Later levels should introduce more complex patterns and additional constraints.
+
+All generated number puzzles must have a clearly defined solution. Validate the player's answer and provide appropriate feedback.
+
+#### Mode B: Sliding Tile Puzzle
+
+Create a sliding puzzle containing numbered tiles or picture fragments arranged in a grid.
+
+One cell may be empty, allowing players to move an adjacent tile into that empty space.
+
+The objective is to arrange the tiles in the correct order or reconstruct an image.
+
+Features should include:
+- Multiple grid sizes.
+- Easy, medium, hard, and expert difficulties.
+- Move counter.
+- Timer.
+- Restart button.
+- Undo button.
+- Optional move suggestions.
+- Completion animation.
+
+Ensure that the puzzle is solvable before displaying it to the player. Use a proper puzzle-generation and solvability-validation algorithm.
+
+For picture puzzles, show a preview of the completed image when the player requests it.
+
+#### Mode C: Match and Merge Puzzle
+
+Create a board containing colorful shapes, gems, numbers, or other matching objects.
+
+Players must move or combine objects according to the current level's rules.
+
+Possible objectives include:
+- Match three or more identical objects.
+- Combine matching numbers to create larger numbers.
+- Reach a specified target score.
+- Clear selected obstacles.
+- Collect a particular number of objects.
+- Complete the objective within a limited number of moves.
+
+Each level must clearly communicate which moves are legal and what the player must achieve.
+
+Prevent invalid actions and make the rules consistent. If the game includes chain reactions or cascades, animate each reaction clearly and calculate scores correctly.
+
+#### Mode D: Picture and Jigsaw Puzzle
+
+Create a picture puzzle in which a complete image is divided into separate pieces.
+
+Players must drag the pieces into the correct locations to reconstruct the original picture.
+
+Include:
+- Multiple image collections.
+- Different piece counts.
+- Easy and difficult puzzle sizes.
+- Piece rotation in selected levels.
+- Image preview.
+- Snap-to-position behavior.
+- Clear placement feedback.
+- Completion celebrations.
+
+On mobile, puzzle pieces must remain large enough to select comfortably. If a player drops a piece close to its correct location, snap it into place when appropriate.
+
+For levels that allow free movement, ensure pieces can be moved away from overlapping positions and that the puzzle does not become impossible to complete.
+
+#### Mode E: Path and Connection Puzzle
+
+Create a puzzle board containing starting points, destinations, barriers, switches, and connecting paths.
+
+The player must connect the correct points or create a valid route while following the level's rules.
+
+Possible rules include:
+- Connect matching symbols.
+- Reach the destination without crossing blocked cells.
+- Visit specific checkpoints.
+- Use every required path segment.
+- Avoid restricted areas.
+- Complete the route within a move limit.
+- Activate switches in the correct order.
+
+Allow players to draw paths using mouse movement on desktop and touch dragging on mobile.
+
+Display a clear preview of the path being drawn. If the path violates a rule, provide immediate visual feedback and explain the mistake when useful.
+
+#### Mode F: Color and Pattern Puzzle
+
+Create challenges based on colors, shapes, sequences, and visual recognition.
+
+Players must identify patterns, continue a sequence, organize objects, or select the correct missing element.
+
+Include:
+- Alternating color sequences.
+- Repeating geometric patterns.
+- Shape-based logic.
+- Symmetry challenges.
+- Pattern matching.
+- Odd-one-out challenges.
+- Rotation and reflection puzzles.
+
+Gradually increase the complexity by combining multiple rules. For example, players might need to identify a sequence that alternates both shape and orientation.
+
+#### Mode G: Physics and Object Puzzle
+
+Create levels in which players interact with objects that move, fall, rotate, bounce, or react to gravity.
+
+The objective may involve moving an object into a target area, removing obstacles, balancing objects, or creating a safe route.
+
+Include realistic and predictable physics behavior. Objects should respond consistently to player actions.
+
+Use these mechanics selectively so that the game remains a puzzle game rather than becoming an uncontrolled physics simulation.
+
+Make sure every physics level has a valid solution and can be restarted if the player gets stuck.
+
+#### Mode H: Memory Puzzle
+
+Create memory challenges in which players must remember the positions, sequences, or appearances of objects.
+
+Examples include:
+- Finding matching pairs.
+- Repeating a displayed sequence.
+- Remembering briefly displayed symbols.
+- Reconstructing an arrangement.
+- Identifying which object changed position.
+
+Provide optional difficulty settings for the number of objects and the duration of previews.
+
+Make the game fair: give players enough time to understand the instructions, and do not hide essential rules.
+
+### 5. A New Rule for Every Level
+
+This is one of the most important requirements.
+
+Every new level should introduce a meaningful variation, new restriction, additional objective, or new combination of mechanics. Do not simply increase the board size or change the colors while keeping every other aspect identical.
+
+Create a level-rule system that supports reusable rules and combinations of rules.
+
+Examples of special rules include:
+
+1. **Limited Moves:** Complete the puzzle within a fixed number of moves.
+2. **Time Challenge:** Solve the puzzle before the countdown reaches zero.
+3. **Locked Tiles:** Certain cells cannot move until a condition is satisfied.
+4. **Hidden Pattern:** Some information is revealed only after a valid action.
+5. **Rotating Board:** The board rotates after selected moves.
+6. **Color Restriction:** Only certain colors may be placed in particular locations.
+7. **One-Way Movement:** Tiles can move in only specified directions.
+8. **Gravity Mode:** Objects fall when the player removes support.
+9. **Switch Mechanism:** Activating one tile changes other tiles.
+10. **Teleport Cells:** Certain tiles transport objects to linked positions.
+11. **Frozen Objects:** Some objects must be unlocked before they can move.
+12. **Sequence Lock:** Players must complete actions in the correct order.
+13. **No-Repeat Rule:** A position or action cannot be used twice.
+14. **Mirror Mode:** Moves are reflected on another part of the board.
+15. **Dark Cells:** Parts of the board are temporarily hidden.
+16. **Moving Obstacles:** Barriers change position according to predictable rules.
+17. **Target Collection:** Collect specific objects before finishing the level.
+18. **Limited Undo:** Players receive only a certain number of undo actions.
+19. **Chain Reaction:** One correct action triggers additional changes.
+20. **Multi-Step Objective:** Complete several smaller objectives in a defined order.
+21. **Safe Zones:** Some actions are permitted only inside marked areas.
+22. **Shape Restrictions:** Particular shapes can occupy only compatible cells.
+23. **Energy Limit:** Each move consumes energy, so players must plan efficiently.
+24. **Bonus Conditions:** Complete an optional challenge for extra stars.
+25. **Boss Puzzle:** Solve a larger, multi-stage challenge using previously learned mechanics.
+
+Do not activate every special rule simultaneously. Each level should remain understandable, fair, and enjoyable.
+
+Show the active rules before the player starts. Explain unfamiliar mechanics with a short tutorial, an example, or a visual demonstration.
+
+Use combinations carefully in advanced levels to create strategic challenges without making the game confusing.
+
+### 6. Level Progression and Difficulty
+
+Create a substantial progression system with multiple worlds, chapters, and levels.
+
+For the initial version, provide at least 100 designed or algorithmically generated levels across several puzzle categories, with a structure that allows additional levels to be added easily.
+
+Organize progression into four difficulty tiers:
+
+**Beginner:** Introduce basic controls, simple patterns, and straightforward objectives.
+
+**Intermediate:** Combine familiar mechanics with additional restrictions.
+
+**Advanced:** Require multiple steps, careful planning, and combinations of rules.
+
+**Expert:** Introduce complex logic, several interacting mechanics, and optional performance objectives.
+
+The first few levels must function as tutorials. Teach one mechanic at a time before combining mechanics in later levels.
+
+Do not make the difficulty increase randomly. Use a deliberate progression that considers the number of possible actions, the complexity of the solution, the number of constraints, and the player's required planning.
+
+Every puzzle must be tested to ensure that it has at least one valid solution.
+
+For procedurally generated puzzles, validate solvability before showing the puzzle. If a puzzle has multiple solutions, make sure all valid solutions are accepted unless the instructions explicitly require a unique solution.
+
+### 7. Interactive Gameplay Screen
+
+Create a clean and responsive gameplay interface.
+
+The screen should contain:
+
+- Current level and puzzle category.
+- Clear objective description.
+- Active special-rule indicators.
+- Main interactive puzzle board.
+- Move counter where applicable.
+- Timer where applicable.
+- Score and star progress.
+- Hint button.
+- Undo button.
+- Restart button.
+- Pause button.
+- Settings shortcut.
+- Optional progress indicators for multi-step objectives.
+
+The board must automatically adapt to different screen sizes without cutting off puzzle pieces or controls.
+
+On desktop, use the available horizontal space efficiently while keeping the puzzle board centered and easy to operate.
+
+On mobile, place the board and its essential controls within the visible screen area whenever possible. If additional content requires scrolling, prevent the board from shifting unexpectedly during gameplay.
+
+When the player pauses the game, freeze timers and active gameplay systems where appropriate. Resume the game from the same state when the player returns.
+
+### 8. Desktop Mouse Controls
+
+Desktop controls must be precise and responsive.
+
+Support the following interactions:
+
+- Click a tile to select it.
+- Click a destination to perform a valid move.
+- Click and drag puzzle pieces.
+- Drag objects along valid paths.
+- Click buttons to activate hints, undo, restart, and pause.
+- Use keyboard navigation where appropriate.
+- Support Escape to pause or close eligible menus.
+- Support Enter or Space to activate focused interface controls.
+- Support arrow keys for compatible grid-based puzzle mechanics.
+
+Use clear hover states so players can identify interactive objects.
+
+When dragging a tile or puzzle piece, show its current position and a preview of its destination.
+
+Prevent unwanted browser text selection, accidental image dragging, and unintended page scrolling during gameplay.
+
+Do not make keyboard shortcuts interfere with normal text input or accessibility features.
+
+### 9. Mobile Touch Controls
+
+Mobile controls must feel natural on Android phones, iPhones, and tablets.
+
+Support the following gestures:
+
+**Tap:** Select a tile, choose an option, activate a button, or confirm a move.
+
+**Hold and Drag:** Press and hold a movable object, move the finger to its destination, and release to drop it.
+
+**Swipe:** Move a tile or trigger a directional action in puzzle modes that support swiping.
+
+**Draw and Connect:** Touch a starting point, drag across permitted cells, and release at the destination.
+
+**Long Press:** Display additional information or a contextual action only when that behavior is useful.
+
+Use touch targets that are large enough to tap comfortably. Keep essential controls separated so players do not accidentally activate restart or exit while attempting to move a puzzle piece.
+
+Use pointer-event handling or an equivalent unified interaction system so mouse, touch, and supported stylus input work consistently.
+
+Prevent the browser from interpreting active gameplay gestures as page scrolling or zooming, but only within the appropriate gameplay region. Preserve normal scrolling in menus and settings when needed.
+
+Avoid accidental double moves, dropped pieces, repeated touch events, and controls that become stuck after a finger leaves the screen.
+
+When a player starts dragging an object, maintain a stable interaction until release or cancellation. If the gesture ends outside the board, handle it safely and return the object to its previous valid position when necessary.
+
+### 10. Responsive Layout Requirements
+
+Use a mobile-first responsive design.
+
+The game must adapt smoothly to:
+- Small mobile screens.
+- Large mobile phones.
+- Portrait and landscape orientations.
+- Tablets.
+- Standard laptops.
+- Large desktop monitors.
+
+Use responsive CSS layouts, flexible dimensions, appropriate breakpoints, and scalable spacing.
+
+Do not use fixed dimensions that make the game overflow on small screens.
+
+Scale the puzzle board while preserving the correct proportions of its tiles. If a level contains many cells, allow the game to adjust the board size intelligently or provide a controlled zoom feature.
+
+Keep important buttons visible and usable. Support safe-area insets on devices with rounded corners or display cutouts.
+
+If the device orientation changes during gameplay, preserve the current puzzle state and rearrange the interface without resetting the level.
+
+Ensure that text remains readable and that animations do not interfere with touch targets.
+
+### 11. Hint System
+
+Create an intelligent hint system that helps players without immediately solving every puzzle.
+
+The hint button should offer contextual assistance based on the current puzzle type.
+
+Possible hint stages include:
+
+**Hint 1 — Understand:** Explain the rule or objective that the player may have overlooked.
+
+**Hint 2 — Discover:** Highlight a relevant tile, pattern, route, or useful relationship.
+
+**Hint 3 — Next Step:** Suggest a valid next move without necessarily completing the entire puzzle.
+
+For selected levels, provide a stronger hint that reveals a solution step, provided that the puzzle engine can calculate a valid move.
+
+Hints should respect the active rules and never recommend an invalid action.
+
+Use a limited hint allowance, optional earned hint tokens, or a reward-based system. Avoid forcing players to make purchases to access basic gameplay assistance.
+
+If no useful hint is available, explain that clearly instead of displaying a broken button.
+
+### 12. Undo, Restart, Pause, and Resume
+
+Implement a reliable undo system.
+
+Undo must reverse the previous valid action and restore all relevant puzzle data, including tile positions, switches, counters, score changes, and other rule-dependent state.
+
+For complex puzzles, store sufficient state information to restore the previous valid state accurately.
+
+Restart must return the player to the initial configuration of the current level. Ask for confirmation if restarting would discard significant progress.
+
+Pause must stop active timers and suspend moving obstacles or other time-dependent mechanics when the rules require it.
+
+Resume must restore the same puzzle state without generating a new board.
+
+Provide a clear exit option that returns the player to the menu without unintentionally erasing saved progress.
+
+### 13. Scoring, Stars, and Rewards
+
+Create an engaging scoring system based on performance rather than luck.
+
+Possible scoring factors include:
+- Completing the puzzle successfully.
+- Using fewer moves.
+- Solving the puzzle quickly when time is relevant.
+- Completing optional objectives.
+- Maintaining an accuracy streak.
+- Solving a puzzle without hints.
+- Discovering advanced solutions.
+
+Award up to three stars per level.
+
+One star should reward successful completion. Additional stars can depend on move efficiency, optional objectives, or another clearly stated performance condition.
+
+Do not penalize players unfairly when a level is designed for exploration or has no meaningful time limit.
+
+Award coins, experience points, achievement progress, or cosmetic rewards when appropriate.
+
+Display rewards through a brief, satisfying animation after a successful level.
+
+Make the scoring rules visible before a challenge begins, especially when players are expected to meet a specific move or time target.
+
+### 14. Victory and Failure Screens
+
+When a player completes a puzzle, display a polished victory screen.
+
+Include:
+- A success animation.
+- The completed puzzle or a preview of it.
+- Stars earned.
+- Final score.
+- Moves used.
+- Completion time where applicable.
+- Optional objectives completed.
+- Reward summary.
+- Next Level button.
+- Replay Level button.
+- Home button.
+
+The next-level button must unlock and open the correct level.
+
+If a player fails a timed challenge or exceeds a move limit, show an encouraging retry screen.
+
+Offer options to retry, review the rules, or return to the level menu.
+
+For puzzles that do not have a failure condition, allow players to continue experimenting rather than forcing an unnecessary failure screen.
+
+Keep the tone positive. Avoid harsh messages that discourage beginners.
+
+### 15. Daily Challenges and Special Events
+
+Add a Daily Challenge section with a new puzzle challenge each day.
+
+Daily challenges may include:
+- A number logic puzzle.
+- A limited-move sliding puzzle.
+- A pattern recognition challenge.
+- A memory test.
+- A special path puzzle.
+- A mixed-mechanics challenge.
+
+Use a consistent daily puzzle for all players during the same challenge period where practical. Use a reliable date-based identifier and deterministic generation rules if puzzles are generated automatically.
+
+Track whether the player has completed the daily challenge. Prevent duplicate reward claims for the same challenge when the game has a persistent account or save system.
+
+Display a countdown to the next challenge only when the relevant time can be calculated reliably.
+
+Introduce optional weekly themes, seasonal challenges, and special puzzle collections without making the core game dependent on an internet connection.
+
+### 16. Achievements and Player Progress
+
+Create an achievement system that rewards exploration, persistence, and skill.
+
+Examples include:
+
+- First Puzzle Solved.
+- Ten Levels Completed.
+- Fifty Levels Completed.
+- Perfect Puzzle.
+- No-Hint Champion.
+- Fast Thinker.
+- Pattern Master.
+- Memory Expert.
+- Daily Challenge Streak.
+- Expert-Level Finisher.
+- All Stars Collected.
+- Every Puzzle Mode Tried.
+
+Each achievement should have a title, description, progress indicator, and completion state.
+
+Unlock achievements automatically when their conditions are satisfied.
+
+Show a small notification when a new achievement is earned.
+
+Save achievement progress so it is not lost when the player closes or refreshes the game.
+
+### 17. Sound Effects, Music, and Animations
+
+Use high-quality, lightweight sound effects for:
+- Selecting a tile.
+- Making a valid move.
+- Completing a sequence.
+- Activating a switch.
+- Collecting a reward.
+- Receiving an achievement.
+- Completing a level.
+- Making an invalid move.
+
+Provide optional background music that suits a relaxing but engaging puzzle experience.
+
+Include separate controls for music volume, sound effects volume, and mute.
+
+On mobile, respect browser audio restrictions and start sound playback only after an appropriate user interaction.
+
+Animations should be smooth and short. Use tile movement animations, snapping effects, gentle particle effects, and satisfying completion transitions.
+
+Do not allow animation delays to make the game feel slow. Provide a reduced-motion option for players who prefer fewer visual effects.
+
+If the player makes a move during an animation, handle the input safely rather than corrupting the puzzle state.
+
+### 18. Themes and Customization
+
+Allow players to personalize the game's appearance.
+
+Include several optional themes, such as:
+- Classic Light.
+- Midnight Dark.
+- Ocean Blue.
+- Forest Green.
+- Purple Galaxy.
+- Minimal High Contrast.
+
+Theme changes must preserve the clarity of puzzle symbols, active selections, and legal-move indicators.
+
+Store the selected theme in the player's saved preferences.
+
+If cosmetic unlocks are included, make sure the game remains fully playable with the default theme.
+
+### 19. Save System and Game State
+
+Implement a dependable save system.
+
+Save the following information where applicable:
+- Current level.
+- Completed levels.
+- Current puzzle state.
+- Unlocked puzzle modes.
+- Total score.
+- Stars earned.
+- Coins and reward tokens.
+- Achievement progress.
+- Daily challenge completion.
+- Sound and music settings.
+- Selected theme.
+- Best times and move records.
+
+For a browser-based single-player version, use local storage or IndexedDB as appropriate.
+
+Save progress after meaningful events, such as completing a level, changing settings, or reaching a stable checkpoint.
+
+If the game is refreshed or closed unexpectedly, restore the most recent valid saved state.
+
+Validate saved data before loading it. Handle corrupted or incompatible save data gracefully, and never let invalid data crash the game.
+
+If online accounts and cloud saves are added later, synchronize data carefully and avoid overwriting newer progress with older saved states.
+
+### 20. Puzzle Generation and Solution Validation
+
+Build a reliable puzzle engine rather than creating levels that merely look interactive.
+
+Each puzzle must have:
+- A defined initial state.
+- A clear objective.
+- A set of legal actions.
+- Explicit rule constraints.
+- A win condition.
+- Optional failure conditions.
+- A state-update system.
+- A validation mechanism.
+
+For procedurally generated puzzles, use appropriate generation algorithms for each puzzle type.
+
+Examples include:
+- Backtracking or constraint-solving algorithms for number grids.
+- Valid shuffle procedures for sliding puzzles.
+- Graph traversal for path puzzles.
+- Controlled pattern generation for sequence puzzles.
+- Verified piece arrangements for jigsaw puzzles.
+- State-search algorithms for puzzles that require several dependent moves.
+
+Use a solver, reverse construction, or another reliable verification method to ensure that generated puzzles are solvable.
+
+Do not rely solely on random generation without checking the resulting puzzle.
+
+Avoid puzzles with accidental contradictions, unreachable goals, impossible objectives, or solutions that depend on undocumented rules.
+
+Where practical, calculate a solution path for hints and testing.
+
+### 21. Game Architecture and Code Quality
+
+Use a clean, modular architecture.
+
+Separate the following responsibilities:
+- User interface and menus.
+- Puzzle board rendering.
+- Puzzle logic.
+- Rule evaluation.
+- Input handling.
+- Level data.
+- Puzzle generation.
+- Solution validation.
+- Scoring and rewards.
+- Save and load functionality.
+- Audio and animation.
+- Settings and accessibility.
+
+Represent level information through structured data rather than hardcoding every screen independently.
+
+Each level definition should specify its puzzle type, initial configuration, objective, active rules, difficulty, move limits, time limits where relevant, and reward conditions.
+
+Create reusable components for tiles, buttons, progress indicators, dialogs, and puzzle instructions.
+
+Use consistent naming, readable code, and clear error handling.
+
+If using HTML, CSS, and JavaScript, organize the files into logical modules. If using a game engine or framework, follow its recommended architecture while preserving the same functionality.
+
+Do not include placeholder buttons, fake score updates, decorative controls that do nothing, or hardcoded victory screens that appear without a valid solution.
+
+### 22. Performance Optimization
+
+The game must load quickly and remain responsive during gameplay.
+
+Optimize the following:
+- Puzzle rendering.
+- Touch and mouse event handling.
+- Animation updates.
+- Image assets.
+- Audio files.
+- Level loading.
+- Save operations.
+
+Avoid unnecessary re-rendering of the entire board when only one tile changes.
+
+Use appropriately sized images and lightweight assets.
+
+Clean up unused event listeners, timers, and animation loops when screens are closed or levels are restarted.
+
+Handle rapid inputs safely and prevent duplicated actions during transitions.
+
+Test performance on lower-powered mobile devices as well as modern desktop computers.
+
+The game should remain playable even when optional animations or audio are disabled.
+
+### 23. Accessibility and Ease of Use
+
+Make the game understandable and accessible to as many players as possible.
+
+Include:
+- Readable text.
+- Clear contrast.
+- Visible focus indicators.
+- Keyboard support for compatible controls.
+- Screen-reader labels for important interface elements.
+- Shape or symbol alternatives to color-only clues.
+- Adjustable sound levels.
+- Reduced-motion settings.
+- Clear instructions for each puzzle type.
+
+Do not communicate essential information exclusively through sound, color, or animation.
+
+Allow players to review the current rules at any time without losing their puzzle progress.
+
+### 24. Optional Offline Support
+
+Where the chosen technology allows it, support offline play for previously loaded or bundled levels.
+
+The core puzzle modes, saved progress, settings, and basic rewards should not require a constant internet connection unless the implementation explicitly depends on online services.
+
+Daily challenges may require a reliable date source or can use a locally calculated date with clear limitations.
+
+If online functionality is unavailable, show a useful message and keep ordinary offline gameplay working.
+
+### 25. Quality Assurance and Testing
+
+Before considering the game complete, test all major features on desktop and mobile.
+
+Verify that:
+- Every button works.
+- Every puzzle mode is playable.
+- Each level has a valid solution.
+- Every active rule is enforced.
+- Hints suggest valid actions.
+- Undo restores the correct previous state.
+- Restart resets the current puzzle correctly.
+- Victory conditions are detected accurately.
+- Failure conditions trigger only when appropriate.
+- Scoring and stars are calculated correctly.
+- Progress persists after refreshing the page.
+- Touch dragging works smoothly.
+- Mouse dragging works smoothly.
+- Keyboard controls work where supported.
+- Portrait and landscape layouts remain usable.
+- No buttons overlap on small screens.
+- No essential content is clipped.
+- Audio settings work correctly.
+- Menus can be opened and closed without losing progress.
+- The game does not crash after repeated moves or rapid interactions.
+
+Test both successful and unsuccessful actions. Include edge cases such as dragging a piece outside the board, pressing undo several times, pausing during an animation, and restarting a level with an active timer.
+
+Fix errors before delivering the final game.
+
+### 26. Final Delivery Requirements
+
+Deliver a complete, working, polished puzzle game rather than a visual mockup.
+
+The finished game must include:
+
+1. A professional home screen.
+2. Multiple genuinely different puzzle modes.
+3. A large collection of levels.
+4. New rules and mechanics introduced progressively.
+5. Functional mobile touch controls.
+6. Functional desktop mouse controls.
+7. Responsive layouts for different screen sizes.
+8. Hints, undo, restart, pause, and resume.
+9. Scoring, stars, and rewards.
+10. Victory and appropriate failure screens.
+11. Daily challenges.
+12. Achievements and statistics.
+13. Sound and animation settings.
+14. Theme customization.
+15. Persistent progress saving.
+16. Puzzle generation and solution validation.
+17. Accessible instructions and controls.
+18. Thorough testing and error handling.
+
+Use sensible defaults where technical decisions are not specified. Prioritize a stable, enjoyable, complete core game before adding optional advanced features.
+
+The final result should feel like a real, professionally developed puzzle game that players can open, understand, play immediately, and enjoy for a long time.
+
+**Most Important Requirement:** Every puzzle must have clear rules, every level must be solvable, every essential control must work, and mobile and desktop players must receive an equally smooth and enjoyable experience.
